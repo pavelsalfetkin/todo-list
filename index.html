@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Заметки</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">-->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="css/media.css" type="text/css" /> -->
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="wrapper_header_top">
+    	<div class="header_top">
+
+    		<div class="header_top_logo">Заметки</div>
+
+        <div class="header_top_note">
+          <span>Всего заметок</span>
+          <span id="note-count" class="header_top_note_count">0</span>
+        </div>
+
+    		<div class="header_top_search">
+          <button id="info-button" class="header_top_search_button hiden" type="submit">i</button>
+        </div>
+
+    	</div>
+    </div>
+
+    	<div class="header_center">
+        <div class="wrapper_header_center">
+
+          <div class="header_center_head">
+            <label class="header_center_head_title">Дела</label>
+            <input class="header_center_head_textfield" type="text">
+            <button id="head-button" class="header_center_head_edit">/</button>
+          </div>
+
+          <div class="header_center_content">
+            <ul id="todo-list">
+              <li class="todo-item">
+                <input class="checkbox" type="checkbox">
+                <label class="title">Сходить за продуктами</label>
+                <input class="textfield" type="text">
+                <button class="edit">/</button>
+                <button class="delete">×</button>
+              </li>
+              <li class="todo-item">
+                <input class="checkbox" type="checkbox">
+                <label class="title">Убраться дома</label>
+                <input class="textfield" type="text">
+                <button class="edit">/</button>
+                <button class="delete">×</button>
+              </li>
+            </ul>            
+          </div>
+
+          <form id="todo-form" class="header_center_bottom">
+            <input id="add-input" class="header_center_bottom_newnote" type="text" placeholder="Новая заметка...">
+            <button id="add-button" class="header_center_bottom_button" type="submit">+</button>
+          </form>
+
+        </div>
+      </div>
+
+    	<div class="header_bottom">
+        <span class="header_bottom_year">© 2018 Заметки</span>
+    	</div>
+
+  </header>
+
+ <script src="js/index.js"></script>
+
+</body>
+</html>
