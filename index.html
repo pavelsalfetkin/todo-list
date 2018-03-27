@@ -11,68 +11,59 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="wrapper">
+    <div class="wrapper-content">
 
-    <div class="wrapper_header_top">
-    	<div class="header_top">
-
-    		<div class="header_top_logo">Заметки</div>
-
-        <div class="header_top_note">
-          <span>Всего заметок</span>
-          <span id="note-count" class="header_top_note_count">0</span>
+      <header class="header">
+        <div class="header_top">
+          <div class="header_top_logo">Заметки</div>
+          <div class="header_top_note">
+            <span>Всего заметок</span>
+            <span id="note-count" class="header_top_note_count">0</span>
+          </div>
+          <div class="header_top_info">
+            <button id="info-button" class="header_top_info_button hiden" type="submit">i</button>
+          </div>
         </div>
+      </header>
 
-    		<div class="header_top_search">
-          <button id="info-button" class="header_top_search_button hiden" type="submit">i</button>
-        </div>
-
-    	</div>
-    </div>
-
-    	<div class="header_center">
+      <main class="header_center">
         <div class="wrapper_header_center">
 
           <div class="header_center_head">
-            <label class="header_center_head_title">Дела</label>
-            <input class="header_center_head_textfield" type="text">
-            <button id="head-button" class="header_center_head_edit">/</button>
+            <label id="list-name" class="header_center_head_title">Список дел</label>
+            <!-- <input class="header_center_head_textfield" type="text"> -->
+            <!-- <button id="head-button" class="header_center_head_edit" title="Изменить">/</button> -->
           </div>
 
           <div class="header_center_content">
             <ul id="todo-list">
-              <li class="todo-item">
+              <!-- <li class="todo-item">
                 <input class="checkbox" type="checkbox">
-                <label class="title">Сходить за продуктами</label>
+                <label class="title">Новая заметка</label>
                 <input class="textfield" type="text">
                 <button class="edit">/</button>
                 <button class="delete">×</button>
-              </li>
-              <li class="todo-item">
-                <input class="checkbox" type="checkbox">
-                <label class="title">Убраться дома</label>
-                <input class="textfield" type="text">
-                <button class="edit">/</button>
-                <button class="delete">×</button>
-              </li>
+              </li> -->
             </ul>            
           </div>
 
           <form id="todo-form" class="header_center_bottom">
             <input id="add-input" class="header_center_bottom_newnote" type="text" placeholder="Новая заметка...">
-            <button id="add-button" class="header_center_bottom_button" type="submit">+</button>
+            <button id="add-button" class="header_center_bottom_button" type="submit" title="Добавить">+</button>
           </form>
 
         </div>
-      </div>
 
-    	<div class="header_bottom">
-        <span class="header_bottom_year">© 2018 Заметки</span>
-    	</div>
+        <div id="header_bottom" class="header_bottom">
+          <span id="bottom_text" class="header_bottom_year">© 2018 Заметки</span>
+        </div>
 
-  </header>
+      </main>
+    </div>
+  </div>
 
- <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
