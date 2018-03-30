@@ -252,4 +252,3 @@ const loadLocalStorage = () => {
 	loadLocalStorage(); // загрузит заметки из хранилища
 	setInterval(noteCountFunction, 1000); // запустит счетчик заметок
 })();
-
